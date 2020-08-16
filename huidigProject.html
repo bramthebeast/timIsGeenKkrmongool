@@ -1,99 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <link rel="icon" href="images/icons8-musical-notes-24.png">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <link rel="icon" href="images/icons8-musical-notes-24.png" />
+    <link ref="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Vocaal ensemble OrSeCante Leuven</title>
-</head>
-<body>
-<header>
-    <h1>Vocaal ensemble OrSeCante</h1>
-    <nav>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1>Vocaal ensemble OrSeCante</h1>
+      <nav>
         <ul>
-            <li><a href="index.html">nieuws</a></li>
-            <li><a href="huidigProject.html">huidig project</a></li>
-            <li><a href="OrSeCante.html">OrSeCante</a></li>
-            <li><a href="contact.html">contact</a></li>
+          <li><a href="index.html">nieuws</a></li>
+          <li><a href="huidigProject.html">huidig project</a></li>
+          <li><a href="OrSeCante.html">OrSeCante</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
     <section class="section gradient">
-        <h2>Huidig Project: The Canterbury Songs</h2>
-        <article id="canterbury">
-            <div class="container ">
-                <div id="canterbury-list">
-                    <h2>The canterbury Songs</h2>
-                    <section>
-                        <h3>Programma:</h3>
-                        <p>Engelse muziek van Thomas Tallis, Henry Purcell, William Byrd, Orlando Gibbons en andere.</p>
-                    </section>
-                    <section>
-                        <h3>Uitvoerders:</h3>
-                        <p>Vocaal ensemble OrSeCante Orgel: Ivo Bigaré Artistiek leider: Arnout Malfliet</p>
-                    </section>
-                    <section>
-                        <h3>Concert Details:</h3>
-                        <p>Datum: Zaterdag, 29 juni
-                            Tijdstip: 20u30
-                            Locatie: Onze-Lieve-Vrouw van Troost, Heverlee</p>
-                    </section>
-                </div>
+      <h2>Huidig Project: The Canterbury Songs</h2>
+      <article id="canterbury">
+        <div class="container">
+          <div id="canterbury-list">
+            <h2>The canterbury Songs</h2>
+            <section>
+              <h3>Programma:</h3>
+              <p>
+                Engelse muziek van Thomas Tallis, Henry Purcell, William Byrd,
+                Orlando Gibbons en andere.
+              </p>
+            </section>
+            <section>
+              <h3>Uitvoerders:</h3>
+              <p>
+                Vocaal ensemble OrSeCante Orgel: Ivo Bigaré Artistiek leider:
+                Arnout Malfliet
+              </p>
+            </section>
+            <section>
+              <h3>Concert Details:</h3>
+              <p>
+                Datum: Zaterdag, 29 juni Tijdstip: 20u30 Locatie:
+                Onze-Lieve-Vrouw van Troost, Heverlee
+              </p>
+            </section>
+          </div>
 
-                <img src="images/images/CanterburySongs.png" alt="">
-            </div>
-        </article>
+          <img
+            class="aside-picture"
+            src="images/images/CanterburySongs.png"
+            alt=""
+          />
+        </div>
+      </article>
     </section>
-    <section class="section picture" id="picture2" >
-        <div class="shade"></div>
-        <h2>tickets</h2>
-        <form method="post" action="contact1.html" class="contact-form">
-            <div class="contact-form-fields">
-                <input
-                        class="contact-form-text"
-                        type="text"
-                        id="first-name"
-                        required=""
-                        placeholder="Voornaam"
-                />
-                <input
-                        class="contact-form-text"
-                        type="text"
-                        id="last-name"
-                        required=""
-                        placeholder="Achternaam"
-                />
-                <input
-                        class="contact-form-text"
-                        type="email"
-                        name="email"
-                        id="email"
-                        required=""
-                        placeholder="Emailadres"
-                />
-                <input
-                        class="contact-form-number"
-                        type="number"
-                        id="aantal tickets"
-                        name="aantal tickets"
-                        min="0"
-                        max="10"
-                />
-                <textarea
-                        class="contact-form-text"
-                        name="Message"
-                        id="message"
-                        placeholder="Jouw bericht"
-                ></textarea>
-            </div>
-            <div class="contact-form-buttons">
-                <input class="contact-form-btn" type="submit" value="verzenden" />
-            </div>
-        </form>
+    <section class="section picture" id="picture2">
+      <div class="shade"></div>
+      <h2>tickets</h2>
+      <form method="post" action="contact1.html" class="contact-form">
+        <div class="contact-form-fields">
+          <input
+            class="contact-form-text"
+            type="text"
+            id="first-name"
+            required=""
+            placeholder="Voornaam"
+          />
+          <input
+            class="contact-form-text"
+            type="text"
+            id="last-name"
+            required=""
+            placeholder="Achternaam"
+          />
+          <input
+            class="contact-form-text"
+            type="email"
+            name="email"
+            id="email"
+            required=""
+            placeholder="Emailadres"
+          />
+          <input
+            class="contact-form-number"
+            type="number"
+            id="aantal tickets"
+            name="aantal tickets"
+            min="0"
+            max="10"
+          />
+          <textarea
+            class="contact-form-text"
+            name="Message"
+            id="message"
+            placeholder="Jouw bericht"
+          ></textarea>
+        </div>
+        <div class="contact-form-buttons">
+          <input class="contact-form-btn" type="submit" value="verzenden" />
+        </div>
+      </form>
     </section>
-
-</body>
+    <footer>
+      <div class="footer">
+        <address>email: info@veerleborremans.be</address>
+        <p>tel: 0478/ 42 52 16</p>
+        <p>adres: Eeuwfeeststraat 43, 3010 Kessel-lo</p>
+      </div>
+    </footer>
+  </body>
 </html>
