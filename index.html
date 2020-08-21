@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
+    <meta
+      name="description"
+      content="Welkom op onze website rond onze zaalvoetbalploeg Fc de lijsterboom"
+    />
+    <meta
+      name="keywords"
+      content="Fc de lijsterboom, voetbal, fussbal, football, zaalvoetbal, soccer, linden zaalvoetbal, de stip zaalvoetbal "
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
       rel="stylesheet"
@@ -19,13 +27,28 @@
   <body>
     <header>
       <h1>FC de lijsterboom</h1>
-      <nav>
+      <button id="menu-button">
+        <svg
+          class="menu-button-icon"
+          viewBox="0 0 24 24"
+          width="40"
+          height="40"
+        >
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </button>
+      <nav id="menu" class="menu">
         <ul>
-          <li><a href="index.html">nieuws</a></li>
-          <li><a href="huidigProject.html">inschrijven</a></li>
-          <li><a href="OrSeCante.html">clubgeschiedenis</a></li>
-          <li><a href="team.html">team</a></li>
-          <li><a href="contact.html">contact</a></li>
+          <li class="menu-item"><a href="index.html">nieuws</a></li>
+          <li class="menu-item">
+            <a href="inschrijving.html">inschrijven</a>
+          </li>
+          <li class="menu-item">
+            <a href="clubgeschiedenis.html">clubgeschiedenis</a>
+          </li>
+          <li class="menu-item"><a href="team.html">team</a></li>
+          <li class="menu-item"><a href="contact.html">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -41,15 +64,55 @@
             doen we dit zeker, en zullen we ook gaan voor een overwinning. Maar
             we zullen niet vergeten dat we dit doen als een vriendengroep.
           </p>
-          <img class="aside-picture" src="images/lijsterboomBanner.png" alt="" />
+          <img
+            class="aside-picture"
+            src="images/lijsterboomBanner.png"
+            alt=""
+          />
         </div>
       </section>
       <section class="section gradient">
         <h2>Locatie</h2>
         <div class="container orange">
-          <div class="mapouter aside-picture"><div class="gmap_canvas"><iframe width="443" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=de%20stip%20linden&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-en.org/en/">123movies watch movies</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:443px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:443px;}</style></div>
+          <div class="mapouter aside-picture">
+            <div class="gmap_canvas">
+              <iframe
+                width="443"
+                height="500"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=de%20stip%20linden&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><a href="https://123movies-en.org/en/">123movies watch movies</a>
+            </div>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 500px;
+                width: 443px;
+              }
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 500px;
+                width: 443px;
+              }
+            </style>
+          </div>
           <p>
-            We spelen al onze thuismatchen in zaal “de stip” in Linden. Dit is niet omdat we hier allemaal zo dicht bij wonen maar omdat we met de ploeg beslist hebben dat deze zaal veruit de beste was binnen het aanbod. Iets verder rijden zagen we allemaal wel zitten zodat we kunnen spelen in een kwalitatievere zaal. De zaal is zeer makkelijk te bereiken en er is een grote gratis parking. Er is elke match een tribune voorzien voor de supporters en een meet en greet met elke speler zit gratis bij in de beleving. Iedereen is dus zeker welkom om ons te komen aanmoedigen.
+            We spelen al onze thuismatchen in zaal “de stip” in Linden. Dit is
+            niet omdat we hier allemaal zo dicht bij wonen maar omdat we met de
+            ploeg beslist hebben dat deze zaal veruit de beste was binnen het
+            aanbod. Iets verder rijden zagen we allemaal wel zitten zodat we
+            kunnen spelen in een kwalitatievere zaal. De zaal is zeer makkelijk
+            te bereiken en er is een grote gratis parking. Er is elke match een
+            tribune voorzien voor de supporters en een meet en greet met elke
+            speler zit gratis bij in de beleving. Iedereen is dus zeker welkom
+            om ons te komen aanmoedigen.
           </p>
         </div>
       </section>
@@ -60,5 +123,6 @@
         <p>tel: 0499/ 24 43 23</p>
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>

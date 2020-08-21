@@ -17,16 +17,57 @@ header
  */
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 2rem 0 2rem;
+}
+
+.menu {
+  position: absolute;
+  background-color: white;
+  z-index: 20;
+  overflow: hidden;
+  height: 0;
+  top: 100%;
+  left: 0;
+  right: 0;
+  transition: height 2s ease;
+}
+
+.menu-visible {
+  height: 35vh;
+}
+
+.menu-item {
+  list-style-type: none;
+}
+
+.menu-item a {
   color: white;
-  padding: 1rem 0 1rem 0;
+}
+
+#menu-button {
+  background: none;
+  outline: none;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+.menu-button-icon {
+  fill: white;
+  point-events: none;
 }
 
 header > h1 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
+  color: white;
 }
 
 /*
@@ -38,13 +79,6 @@ header > h1 {
     font-size: 2em;
 }
 */
-
-header ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
 
 header li {
   padding: 1rem;
@@ -70,6 +104,7 @@ main
 
 main {
   display: flex;
+  margin-top: 4rem;
   flex-direction: column;
   flex-grow: 1;
 }
@@ -131,7 +166,8 @@ main {
   display: none;
 }
 
-#picture1 {
+#picture1 {<meta name="description" content="Welkom op onze website rond onze zaalvoetbalploeg Fc de lijsterboom">
+  <meta name="keywords" content="Fc de lijsterboom, voetbal, fussbal, football, zaalvoetbal, soccer, linden zaalvoetbal, de stip zaalvoetbal ">
   background-image: url("../images/zaalvoetbal.jpg");
   background-size: cover;
 }
@@ -142,22 +178,12 @@ main {
 }
 
 #picture3 {
-  background-image: url("../images/football-503074_1920.jpg");
+  background-image: url("../images/index.jpeg");
   background-size: cover;
 }
 
 #picture4 {
-  background-image: url("../images/images/IMG_6937.jpeg");
-  background-size: cover;
-}
-
-#picture5 {
-  background-image: url("../images/images/DSC_0218.JPG");
-  background-size: cover;
-}
-
-#picture6 {
-  background-image: url("../images/images/IMG_6945.jpeg");
+  background-image: url("../images/br.jpeg");
   background-size: cover;
 }
 
@@ -183,7 +209,6 @@ main {
     #f9d7ea
   );
 }
-
 .gradient > h2 {
   color: darkorange;
 }
@@ -281,7 +306,6 @@ form {
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
-
 }
 
 /*
@@ -298,11 +322,7 @@ footer
   padding: 1.5rem;
 }
 
-.footer * {
-  margin-bottom: 0.5rem;
-}
-
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 850px) {
   h1 {
     font-size: 2rem;
   }
@@ -322,6 +342,22 @@ footer
   .aside-picture {
     display: block;
   }
+
+  #menu-button {
+    visibility: hidden;
+  }
+
+  .menu {
+    height: auto;
+    position: static;
+    background: none;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -333,5 +369,3 @@ footer
     flex-direction: row !important;
   }
 }
-
-
