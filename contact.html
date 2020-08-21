@@ -11,50 +11,105 @@
     />
     <meta charset="UTF-8" />
     <link rel="icon" href="images/icons8-musical-notes-24.png" />
-    <link ref="stylesheet" href="mobile.css" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Vocaal ensemble OrSeCante Leuven</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>Vocaal ensemble OrSeCante</h1>
+      <h1>FC de lijsterboom</h1>
       <nav>
         <ul>
           <li><a href="index.html">nieuws</a></li>
-          <li><a href="huidigProject.html">huidig project</a></li>
-          <li><a href="OrSeCante.html">OrSeCante</a></li>
+          <li><a href="huidigProject.html">inschrijven</a></li>
+          <li><a href="OrSeCante.html">clubgeschiedenis</a></li>
+          <li><a href="team.html">team</a></li>
           <li><a href="contact.html">contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="gradient">
-      <section class="info">
-        <section>
-          <h2>Contact</h2>
-          <p>Email: info@veerleborremans.be</p>
-          <p>Tel: 0478425216</p>
-          <p>Adres: Veerle Borremans, Eeuwfeeststraat 43, 3010 Kessel-Lo</p>
-        </section>
+    <main >
+      <section class="section picture" id="picture7">
+        <div class="shade"></div>
+        <h2>Vragen? Vul het formulier in</h2>
+        <form method="post" action="contact1.html" class="contact-form">
+          <div class="contact-form-fields">
+            <input
+                    class="contact-form-text"
+                    type="text"
+                    id="first-name"
+                    required=""
+                    placeholder="Voornaam"
+            />
+            <input
+                    class="contact-form-text"
+                    type="text"
+                    id="last-name"
+                    required=""
+                    placeholder="Achternaam"
+            />
+            <input
+                    class="contact-form-text"
+                    type="email"
+                    name="email"
+                    id="email"
+                    required=""
+                    placeholder="Emailadres"
+            />
+            <textarea
+                    class="contact-form-text"
+                    name="Message"
+                    id="message"
+                    placeholder="Jouw bericht"
+            ></textarea>
+          </div>
+          <div class="contact-form-buttons">
+            <input class="contact-form-btn" type="submit" value="verzenden" />
+          </div>
+        </form>
+      </section>
+      <section class="gradient section">
+        <h2>Contact</h2>
+        <div class="container orange" id="contact-info">
+          <p>Email: info.fcdelijsterboom@gmail.com <br>
+            Tel: 0478425216 <br>
 
-        <section>
-          <h2>Betalingen</h2>
-          <ul>
-            <p>Rekeningnummer: BE16 7450 5854 9774</p>
-            <p>Adres: OrSecante, Leuven</p>
-            <a href="/huidigProject.html"
-              >tickets kopen voor Canterbury Songs</a
-            >
+            Rekeningnummer: BE16 7460 5854 9774 <br>
+            Adres: FC de lijsterboom, Leuven <br>
+          </p>
+          </div>
+        <div class="contact-container">
+          <ul class="contact-links">
+            <li class="contact-link" id="youtube-link">
+              <a
+                      href="https://www.youtube.com/channel/UCEJHiowqdAl1NnUAcHlBv_w/featured?fbclid=IwAR3HoD2kgX87OXJfwDg63XoYusL2SMNa-Z8ua5G3uHjqucyisIJ3ANryKls"
+              ><img src="images/icons8-youtube-squared-200.png" alt=""
+              /></a>
+            </li>
+            <li class="contact-link" id="instagram-link">
+              <a
+                      href="https://instagram.com/fcdelijsterboom?utm_source=ig_profile_share&igshid=66viley89bri"
+              ><img src="images/icons8-instagram-200.png" alt=""
+              /></a>
+            </li>
+            <li class="contact-link" id="facebook-link">
+              <a href="https://www.facebook.com/fcdelijsterboom/"
+              ><img src="images/icons8-facebook-200.png" alt=""
+              /></a>
+            </li>
           </ul>
-        </section>
+        </div>
+
+
+
+
       </section>
     </main>
     <footer>
       <div class="footer">
-        <address>email: info@veerleborremans.be</address>
-        <p>tel: 0478/ 42 52 16</p>
-        <p>adres: Eeuwfeeststraat 43, 3010 Kessel-lo</p>
+        <address>email: info.fcdelijsterboom@gmail.com</address>
+        <p>tel: 0499/ 24 43 23</p>
       </div>
     </footer>
   </body>
